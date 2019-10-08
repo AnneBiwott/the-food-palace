@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">The Food Palace</string>
+    <string name="Welcome">Home of all your favourite cuisines! Try us out today.</string>
+    <string name="home">From breakfast, to lunch, to dinner to dessert. Prepared with love.</string>
+    <string name="community">Login to see what we have in store for you today.</string>
+    <string name="register">Be part of The Food Palace Community</string>
+    <string name="service">Were you served well? were you dissatisfied with the service? At The Food Palace, our customers come first. Feel free to post your comments, complaints and ideas too.  </string>
+    <string name="login"> Are you already a member? You know what to do!</string>
+    <string name="bepart"> If not, you can always join us. The more, the merrier!</string>
+</resources>
+

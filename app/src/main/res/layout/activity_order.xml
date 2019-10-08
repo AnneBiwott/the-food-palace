@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order">
+
+    <TextView
+        android:id="@+id/order_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Menu"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <CheckBox
+        android:id="@+id/beverages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_menu"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Beverages" />
+
+    <CheckBox
+        android:id="@+id/meals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/beverages"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Meals" />
+
+
+    <CheckBox
+        android:id="@+id/desserts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meals"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Desserts" />
+
+    <CheckBox
+        android:id="@+id/specials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desserts"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Specials" />
+
+    <TextView
+        android:id="@+id/options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/specials"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Options"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/options">
+
+        <RadioButton
+            android:id="@+id/btn_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/options"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="To go" />
+
+
+        <RadioButton
+            android:id="@+id/btn_dine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_go"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Dine in" />
+
+        <RadioButton
+            android:id="@+id/btn_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_dine"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Home delivery"/>
+
+    </RadioGroup>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Submit Order"
+       android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/group"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
